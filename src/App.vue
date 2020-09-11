@@ -32,14 +32,9 @@ export default {
 // Custom colors colors
 $primary: #d3ac17;
 $primary-invert: findColorInvert($primary);
-
-// datepicker colors
-$datepicker-background-color: #2f353c;
-$datepicker-header-color: $grey-light;
-$datepicker-today-border: solid 1px $primary;
-$datepicker-item-color: $grey-light;
-$datepicker-item-disabled-color: $grey-dark;
-$datepicker-item-selected-background-color: #ffcc0d;
+$custom-background-dark: #2f353c;
+$custom-background-light: #363d4d;
+$custom-selected-color: #ffcc0d;
 
 // Setup $colors to use as bulma classes
 $colors: (
@@ -53,6 +48,26 @@ $colors: (
     "warning": ($warning, $warning-invert),
     "danger": ($danger, $danger-invert),
 );
+
+// datepicker colors
+$datepicker-background-color: $custom-background-dark;
+$datepicker-header-color: $grey-light;
+$datepicker-today-border: solid 1px $primary;
+$datepicker-item-color: $grey-light;
+$datepicker-item-disabled-color: $grey-dark;
+$datepicker-item-selected-background-color: $custom-selected-color;
+
+$input-color: $grey-light;
+$input-border-color: none;
+$input-background-color: $custom-background-dark;
+
+// button colors
+$button-color: $grey-light;
+$button-active-color: $grey-light;
+$button-focus-color: $grey-light;
+$button-background-color: $custom-background-light;
+$button-hover-color: $primary;
+$button-hover-border-color: none;
 
 // Links
 $link: $primary;
